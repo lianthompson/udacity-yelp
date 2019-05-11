@@ -276,3 +276,129 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+
+@media screen and (min-width: 1281px) {
+  .wrapper {
+    width: 1250px;
+  }
+  #restaurant-container {
+    width: 30vw;
+  }
+  #reviews-container {
+    width: 30vw;
+  }
+  .inside #footer {
+    width: 30vw;
+  }
+  .inside #map-container {
+    width: calc(70vw - 1em);
+  }
+}
+/* DESKTOP SIZES */
+
+@media screen and (min-width: 941px) and (max-width: 1220px)  {
+  .wrapper {
+    width: 900px;
+  }
+  #restaurant-container {
+    width: 40vw;
+  }
+  #reviews-container {
+    width: 40vw;
+  }
+  .inside #footer {
+    width: 40vw;
+  }
+  .inside #map-container {
+    width: calc(60vw - 1em);
+  }
+}
+
+/* TABLET SIZES */
+
+@media screen and (max-width: 770px) {
+  .home main {
+    margin-top: 8em;
+  }
+  .home header {
+    height: 8em;
+  }
+  nav {
+    height: 3em;
+  }
+  .home nav {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home .logo {
+    width: 100%;
+    height: 4em;
+  }
+  .filter-options {
+    height: 3em;
+    width: 100%;
+    justify-content: center;
+  }
+  .inside .wrapper {
+    font-size: 0.8em;
+  }
+  #restaurants-list {
+    justify-content: center;
+    padding: 1em;
+  }
+  #map {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #restaurants-list li {
+    width: 80%;
+  }
+  #restaurant-name {
+    font-size: 1.2em;
+  }
+  #restaurant-hours td {
+    display: table-header-group;
+  }
+}
+
+/* MOBILE SIZES */
+
+@media screen and (max-width: 480px) {
+  .filter-options h2 {
+    display: none;
+  }
+  #restaurant-container {
+    width: 100vw;
+  }
+  #reviews-container {
+    width: 100vw;
+  }
+  .inside #map-container {
+    position: static;
+    width: 100%;
+    height: 550px;
+    margin-bottom: 1em;
+  }
+  .inside #footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    width: 320px;
+  }
+}
